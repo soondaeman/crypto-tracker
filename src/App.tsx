@@ -51,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
     border-spacing: 0;
   }
   * {
-    box-sizing: border-box
+    box-sizing: border-box;
   }
   body { 
     font-family: 'Source Sans Pro', sans-serif;
@@ -60,6 +60,7 @@ const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
+    color: inherit;
   }
 `;
 
