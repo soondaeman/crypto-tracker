@@ -50,7 +50,7 @@ function Chart({ coinId }: ChartProps) {
             },
             grid: { show: false },
             theme: { mode: 'dark' },
-            stroke: { curve: 'smooth', width: 3 },
+            stroke: { curve: 'smooth', width: 4 },
             yaxis: { show: false },
             xaxis: {
               labels: {
