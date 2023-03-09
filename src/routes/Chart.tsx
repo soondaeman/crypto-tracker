@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 import { useQuery } from 'react-query';
 import { fetchCoinHistory } from '../api';
 import ApexChart from 'react-apexcharts';
+=======
+import { useQuery } from "react-query";
+import { fetchCoinHistory } from "../api";
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
 
 interface ChartProps {
   coinId: string;
 }
 
+<<<<<<< HEAD
 interface IHistorical {
   time_open: string;
   time_close: string;
@@ -81,6 +87,14 @@ function Chart({ coinId }: ChartProps) {
       )}
     </div>
   );
+=======
+function Chart({ coinId }: ChartProps) {
+  const { isLoading, data } = useQuery(["ohlcv", coinId], () =>
+    fetchCoinHistory(coinId)
+  );
+  console.log(data);
+  return <h1>Chart</h1>;
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
 }
 
 export default Chart;

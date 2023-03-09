@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 import { Helmet } from 'react-helmet';
 import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { fetchCoins } from '../api';
+=======
+import { useState, useEffect } from "react";
+import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { fetchCoins } from "../api";
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
 
 const Container = styled.div`
   padding: 0px 20px;
@@ -23,7 +31,11 @@ const CoinsList = styled.ul`
 
 const Coin = styled.li`
   background-color: white;
+<<<<<<< HEAD
   color: ${(prop) => prop.theme.textColor};
+=======
+  color: ${(prop) => prop.theme.bgColor};
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
   border-radius: 15px;
   margin-bottom: 10px;
   a {
@@ -66,6 +78,7 @@ interface ICoin {
 }
 
 function Coins() {
+<<<<<<< HEAD
   const { isLoading, data } = useQuery<ICoin[]>('allCoins', fetchCoins);
 
   return (
@@ -73,6 +86,12 @@ function Coins() {
       <Helmet>
         <title>COIN</title>
       </Helmet>
+=======
+  const { isLoading, data } = useQuery<ICoin[]>("allCoins", fetchCoins);
+
+  return (
+    <Container>
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
       <Header>
         <Title>COIN</Title>
       </Header>

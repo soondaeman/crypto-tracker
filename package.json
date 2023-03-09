@@ -1,12 +1,17 @@
 {
+<<<<<<< HEAD
   "homepage": "https://soondaeman.github.io/react-master-class2/",
   "name": "react-master-class",
+=======
+  "name": "crypto-tracker",
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "apexcharts": "^3.37.1",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.0",
@@ -16,15 +21,32 @@
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
+=======
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.14",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.8",
+    "typescript": "^4.9.5",
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+<<<<<<< HEAD
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+=======
+    "eject": "react-scripts eject"
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
   },
   "eslintConfig": {
     "extends": [
@@ -45,10 +67,16 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@types/react-helmet": "^6.1.6",
     "@types/react-query": "^1.2.9",
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.26",
     "gh-pages": "^5.0.0"
+=======
+    "@types/react-query": "^1.2.9",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.26"
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
   }
 }

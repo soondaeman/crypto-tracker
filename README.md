@@ -10,16 +10,22 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+<<<<<<< HEAD
 =======
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 >>>>>>> 7e178dc142849c4fc8f274bb1bfca808cbc39fd8
+=======
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
 
 ### `npm test`
 
@@ -39,6 +45,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `npm run eject`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
@@ -46,6 +55,7 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<<<<<<< HEAD
 =======
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
@@ -55,12 +65,15 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 >>>>>>> 7e178dc142849c4fc8f274bb1bfca808cbc39fd8
+=======
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -88,3 +101,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 >>>>>>> 7e178dc142849c4fc8f274bb1bfca808cbc39fd8
+=======
+>>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
