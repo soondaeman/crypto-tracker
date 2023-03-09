@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Router from './Router';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { darkTheme, lightTheme } from './theme';
 import { useState } from 'react';
-=======
-import { createGlobalStyle } from "styled-components";
-import Router from "./Router";
-import { ReactQueryDevtools } from "react-query/devtools";
->>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -74,7 +68,6 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
-<<<<<<< HEAD
   //mode change state
   const [isDark, setIsDark] = useState(false);
   //toggle
@@ -88,13 +81,6 @@ function App() {
         <Router />
         <ReactQueryDevtools initialIsOpen={true} />
       </ThemeProvider>
-=======
-  return (
-    <>
-      <GlobalStyle />
-      <Router />
-      <ReactQueryDevtools initialIsOpen={true} />
->>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
     </>
   );
 }

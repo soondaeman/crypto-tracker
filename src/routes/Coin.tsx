@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import { useQuery } from 'react-query';
 import { Helmet } from 'react-helmet';
-=======
-import { useState, useEffect } from "react";
-import { useQuery } from "react-query";
->>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
 import {
   Link,
   Route,
@@ -12,19 +7,11 @@ import {
   useLocation,
   useParams,
   useRouteMatch,
-<<<<<<< HEAD
 } from 'react-router-dom';
 import styled from 'styled-components';
 import { fetchCoinInfo, fetchCoinTickers } from '../api';
 import Chart from './Chart';
 import Price from './Price';
-=======
-} from "react-router-dom";
-import styled from "styled-components";
-import { fetchCoinInfo, fetchCoinTickers } from "../api";
-import Chart from "./Chart";
-import Price from "./Price";
->>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
 
 const Container = styled.div`
   padding: 0px 20px;
@@ -164,7 +151,6 @@ function Coin() {
   const { coinId } = useParams<RouteParams>();
   const { state } = useLocation<RouteState>();
 
-<<<<<<< HEAD
   const priceMatch = useRouteMatch('/:coinId/price');
   const chartMatch = useRouteMatch('/:coinId/chart');
 
@@ -179,25 +165,12 @@ function Coin() {
       {
         refetchInterval: 5000,
       }
-=======
-  const priceMatch = useRouteMatch("/:coinId/price");
-  const chartMatch = useRouteMatch("/:coinId/chart");
-
-  const { isLoading: infoLoading, data: infoData } = useQuery<InfoData>(
-    ["info", coinId],
-    () => fetchCoinInfo(coinId)
-  );
-  const { isLoading: tickersLoading, data: priceData } =
-    useQuery<PriceInfoData>(["tickers", coinId], () =>
-      fetchCoinTickers(coinId)
->>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
     );
 
   const loading = infoLoading || tickersLoading;
 
   return (
     <Container>
-<<<<<<< HEAD
       <Helmet>
         <title>
           {state?.name ? state.name : loading ? 'Loading...' : infoData?.name}
@@ -206,11 +179,6 @@ function Coin() {
       <Header>
         <Title>
           {state?.name ? state.name : loading ? 'Loading...' : infoData?.name}
-=======
-      <Header>
-        <Title>
-          {state?.name ? state.name : loading ? "Loading..." : infoData?.name}
->>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
         </Title>
       </Header>
       {loading ? (
@@ -227,13 +195,8 @@ function Coin() {
               <span>{infoData?.symbol}</span>
             </OverviewItem>
             <OverviewItem>
-<<<<<<< HEAD
               <span>Price:</span>
               <span>{priceData?.quotes.USD.price}</span>
-=======
-              <span>Open Source:</span>
-              <span>{infoData?.open_source ? "Yes" : "No"}</span>
->>>>>>> cd1ce75318e8ee61f458e269b842d4a31d02f7eb
             </OverviewItem>
           </Overview>
           <Description>{infoData?.description}</Description>
