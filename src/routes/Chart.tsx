@@ -49,9 +49,28 @@ function Chart({ coinId }: ChartProps) {
             stroke: { curve: 'smooth', width: 3 },
             yaxis: { show: false },
             xaxis: {
-              labels: { show: false },
+              labels: {
+                show: false,
+                datetimeFormatter: {
+                  month: "MMM 'yy",
+                },
+              },
               axisTicks: { show: false },
               axisBorder: { show: false },
+              categories: data?.map((price) =>
+                new Date(Number(price.time_close) * 1000).toISOString()
+              ),
+              type: 'datetime',
+            },
+            fill: {
+              type: 'gradient',
+              gradient: { gradientToColors: ['#0be881'], stops: [0, 100] },
+            },
+            colors: ['#4bcffa'],
+            tooltip: {
+              y: {
+                formatter: (value) => `$${value.toFixed(3)}`,
+              },
             },
           }}
         />
