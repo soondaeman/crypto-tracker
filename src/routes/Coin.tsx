@@ -39,7 +39,7 @@ const Loader = styled.div`
 const Overview = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(177, 163, 163, 0.5);
   padding: 10px 20px;
   border-radius: 10px;
 `;
@@ -59,6 +59,7 @@ const OverviewItem = styled.div`
 const Description = styled.p`
   margin: 20px 0px;
   padding: 5px;
+  color: ${(prop) => prop.theme.textColor};
 `;
 
 const Tabs = styled.div`
@@ -73,7 +74,7 @@ const Tab = styled.span<{ isActive: boolean }>`
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 400;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(153, 134, 134, 0.5);
   padding: 7px 0px;
   border-radius: 10px;
   a {
@@ -147,7 +148,9 @@ interface PriceInfoData {
   };
 }
 
-function Coin() {
+interface ICoinProps {}
+
+function Coin({}: ICoinProps) {
   const { coinId } = useParams<RouteParams>();
   const { state } = useLocation<RouteState>();
 
